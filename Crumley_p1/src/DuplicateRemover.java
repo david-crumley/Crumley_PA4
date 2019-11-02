@@ -1,14 +1,13 @@
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
-
 
 public class DuplicateRemover {
 	
-	private ArrayList<String> uniqueWords = new ArrayList<String>();
-		
+	HashSet<String> uniqueWords = new HashSet <String>();	
+	
 	public void remove (String dataFile)	{
 		try	{	
 			FileInputStream fileIn = new FileInputStream (dataFile);
